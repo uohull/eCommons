@@ -12,6 +12,7 @@ body {
   background-color:#161616;
   padding-left: 0;
   padding-right: 0;
+  padding-top: 40px;
 }
 .hero-unit p {
     color: inherit;
@@ -215,32 +216,47 @@ img.resize{
 }
 
 .single, .timetable, .hydra, .electives, .payments, .myadmin{
+
+  background-color: #FFFFFF;
+
   background-color: rgb(255, 255, 255);
   filter:alpha(opacity=89); /* For IE8 and earlier */
   
   background-color: rgba(255, 255, 255, 0.96);
+
+  /* Extra background-color required here for IE7 */ 
+  *background-color: #FFFFFF;
 }
 
 .itsupport {
+
+  background-color: #F5DDB4;
+
   background-color: rgb(245, 221, 180);
   filter:alpha(opacity=89); /* For IE8 and earlier */
   
   background-color: rgba(245, 221, 180, 0.89);
+
+  /* Extra background-color required here for IE7 */ 
+  *background-color: #F5DDB4;
+
 }
 
 
 
-.email, .email ul{
+.email {
+
+  background-color: #FBF58D;
   
   background-color: rgb(251, 245, 141);
   background-color: rgba(251, 245, 141, 0.89);
 
   filter:alpha(opacity=89); /* For IE8 and earlier */
-  
-  
 
+  /* Extra background-color required here for IE7 */ 
+  *background-color: #FBF58D;
 
-}
+  }
 
 .opaque {
 -moz-opacity: 0.89;
@@ -249,20 +265,31 @@ filter: alpha(opacity=89);
 
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=89)";
 }
-.ebridge, .ebridge-left ul{
+
+.ebridge {
+  background-color: #BFFACD;
+
   background-color: rgb(191, 250, 205);
   filter:alpha(opacity=89); /* For IE8 and earlier */
   
   background-color: rgba(191, 250, 205, 0.89);
- 
 
+   /* Extra background-color required here for IE7 */ 
+   *background-color: #BFFACD;
 }
 
 #library , .library {
+
+  background-color: #FABFF9;
+
   background-color: rgb(250, 191, 249);
   filter:alpha(opacity=89); /* For IE8 and earlier */
   
   background-color: rgba(250, 191, 249, 0.89);
+
+  /* Extra background-color required here for IE7 */ 
+   *background-color: #FABFF9;
+
 } 
 #library a, #union a, .myadmin a, .itsupport a, .rssheader a{
   color:#000000;
@@ -282,10 +309,17 @@ filter: alpha(opacity=89);
     padding-right: 32px;
 }
 #union , .union{
+
+  background-color: #FB758B;
+
   background-color: rgb(251, 117, 139);
   filter:alpha(opacity=89); /* For IE8 and earlier */
   
   background-color: rgba(251, 117, 139, 0.89);
+
+  /* Extra background-color required here for IE7 */ 
+   *background-color: #FB758B;
+
 }
 .single h2, .email h2, .ebridge h2, .timetable h2, .hydra h2, .electives h2, .payments h2, .newsh2, #library h2, #timetables h2, #union h2, .myadmin h2, .itsupport h2{
   

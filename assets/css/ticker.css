@@ -37,17 +37,32 @@ body {
 }
 
 #ticker1 .odd { 
+
+	background-color: #E8E8E8;
+
 	background-color: rgb(232,232,232);
 	filter:alpha(opacity=89); /* For IE8 and earlier */
 	background-color: rgba(232,232,232, 0.89); 
 	padding-bottom: 30px;
 
+	/* Extra background-color required here for IE7 */ 
+   	*background-color: #E8E8E8;
+
 }
 #ticker1 .even { 
+
+	background-color: #D4D4E8;
+
 	background-color:rgb(212,212,232);
 	filter:alpha(opacity=89); /* For IE8 and earlier */
 	background-color:rgba(212,212,232, 0.89);
-	padding-bottom: 32px; }
+	padding-bottom: 32px; 
+
+	/* Extra background-color required here for IE7 */ 
+   	*background-color: #D4D4E8;
+}
+
+
 
 #ticker2 .odd { background-color: #e8fce8; }
 #ticker2 .even { background-color: #d4e8d4; }
