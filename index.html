@@ -29,6 +29,14 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 
+    <script type="text/javascript">
+        $("#q").keyup(function(event){
+            if(event.keyCode == 13){
+                $("#hiddenSearch").click();
+            }
+        });
+    </script>
+
 </head>
 <body>
     <div class="container">
@@ -55,12 +63,19 @@
                                    
                                    
                                 </ul>
+                                <!--
 
                                 <form class="navbar-search pull-left">
                                     <input id="q" name="q" type="text" class="search-query" placeholder="University Site Search" onfocus="clearText(this);" value="Search" onkeypress="return SubmitOnEnter(this,event)">
                                     <input id="Template_gobutton" type="button" onclick="SearchSite();" value="Go" name="Template$gobutton">
+-->
 
-
+                                </form>
+                                <form class="navbar-search pull-left">
+                                
+                                        <input id="q" name="q" type="text" class="search-query" placeholder="University     ite Search" onfocus="clearText(this);" onkeypress="return SubmitOnEnter(this,event)">
+                                       <input id="hiddenSearch" type="hidden" onclick="SearchSite();" name="Template$gobutton" class="btn">
+                                       
                                 </form>
 
                             </div><!--/.nav-collapse -->
@@ -78,7 +93,7 @@
                             <div class="alert alert-info">
                                  <button class="close" data-dismiss="alert" type="button">×</button>
                                 <h2>Welcome</h2>
-                                This page has been developed to provide links to the key information and resources needed by students on the Hull campus. This proof of concept is our first attempt to do this. If you have any comments on this page please provide <a href="twitter-lib@hull.ac.uk?subject=eCommons%20Feedback">feedback</a>.
+                                This page has been developed to provide links to the key information and resources needed by students on the Hull campus. This proof of concept is our first attempt to do this. If you have any comments on this page please provide <a href="mailto:twitter-lib@hull.ac.uk?subject=eCommons%20Feedback">feedback</a>.
                             </div>   <!-- /alert -->
                         </div>   <!-- /span12 -->
                     </div>   <!-- /row -->
@@ -130,7 +145,7 @@
                                           
                                               <p>The ICT Department provides support and advice for all your IT queries. You may find the answer you are looking for on our website. </p>
                                              <ul class="nav nav-list">
-                                             <li><a href="http://www.hull.ac.uk/help"><i class="icon-envelope"></i>ICT Home Page </a></li>
+                                             <li><a href="http://www2.hull.ac.uk/acs/help.aspx"><i class="icon-envelope"></i>ICT Home Page </a></li>
                                              </ul>
                                         
                                                                    
@@ -186,7 +201,7 @@
                                                 <li><a href="#"><i class="icon-time"></i>Opening hours </a></li>
                                             </ul>
                                                 <div id="main-search" class="search">
-                                                       <form target="_blank" method="get" action="http://library.hull.ac.uk/search/">
+                                                       <form target="_blank" class="form-inline" method="get" action="http://library.hull.ac.uk/search/">
                                                             <p>Quick catalogue search: (find books, ebooks, journals, electronic databases)</p>
                                                             <p>
                                                                 <select name="searchtype">
@@ -204,7 +219,7 @@
                                                                         <option value="1">BJL, Hull</option>
                                                                         <option value="2">KDL, Scarborough</option>
                                                                     </select>
-                                                                <input class="noborder" type="submit" name="submit" alt="Submit Search" value="Search">
+                                                                <input class="btn" type="submit" name="submit" alt="Submit Search" value="Search">
                                                             </p>
                                                     </form>
                                            
@@ -275,7 +290,7 @@
                             <h2>ICT Support</h2>
                             <p>The ICT Department provides support and advice for all your IT queries. You may find the answer you are looking for on our website. </p>
                             <ul class="nav nav-list">
-                                <li><a href="www.hull.ac.uk/help"><i class="icon-envelope"></i>ICT Home Page </a></li>
+                                <li><a href="http://www2.hull.ac.uk/acs/help.aspx"><i class="icon-envelope"></i>ICT Home Page </a></li>
                             </ul>
                         </div><!--/itSupport-->
                         
@@ -318,7 +333,7 @@
                                          <li><a href="#"><i class="icon-time"></i>Opening hours </a></li>
                                     </ul>
                                     <div id="main-search" class="search">
-                                            <form target="_blank" method="get" action="http://library.hull.ac.uk/search/">
+                                            <form target="_blank" class="form-inline" method="get" action="http://library.hull.ac.uk/search/">
                                                 <p>Quick catalogue search: (find books, ebooks, journals, electronic databases)</p>
                                                 <p>
                                                 <select name="searchtype">
@@ -336,7 +351,7 @@
                                                         <option value="1">BJL, Hull</option>
                                                         <option value="2">KDL, Scarborough</option>
                                                     </select>
-                                                <input class="noborder" type="submit" name="submit" alt="Submit Search" value="Search">
+                                                <input class="btn" type="submit" name="submit" alt="Submit Search" value="Search">
                                                 
                                                 </p>
                                             </form>
