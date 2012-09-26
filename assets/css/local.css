@@ -322,7 +322,9 @@ filter: alpha(opacity=89);
 
 }
 .single h2, .email h2, .ebridge h2, .timetable h2, .hydra h2, .electives h2, .payments h2, .newsh2, #library h2, #timetables h2, #union h2, .myadmin h2, .itsupport h2{
-  
+ 
+ background-color: #000;
+
  background-color: rgb(0, 0, 0);
  filter:alpha(opacity=89); /* For IE8 and earlier */
   
@@ -330,6 +332,10 @@ filter: alpha(opacity=89);
   color:#fff;
   text-align:center;
    font-size: 16px;
+
+  /* Extra background-color required here for IE7 */ 
+  *background-color: #000;
+
 }
 
 
